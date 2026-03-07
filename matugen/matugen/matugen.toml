@@ -1,30 +1,30 @@
 [config]
 # where matugen should output files
-template_dir = "/home/markm/.config/matugen/templates"
+template_dir = "~/.config/matugen/templates"
 
 [templates.helix]
-input_path = "/home/markm/.config/matugen/templates/helix.toml"
-output_path = "/home/markm/.config/helix/themes/matugen.toml"
+input_path = "~/.config/matugen/templates/helix.toml"
+output_path = "~/.config/helix/themes/matugen.toml"
 
 [templates.yazi]
 input_path = "/usr/share/quickshell/dms/matugen/templates/yazi-theme.toml"
-output_path = "/home/markm/.config/yazi/flavors/matugen.yazi/flavor.toml"
+output_path = "~/.config/yazi/flavors/matugen.yazi/flavor.toml"
 
 [templates.wava]
-input_path = "/home/markm/.config/matugen/templates/wava.ini"
-output_path = "/home/markm/.config/wava/config"
+input_path = "~/.config/matugen/templates/wava.ini"
+output_path = "~/.config/wava/config"
 
 [templates.rmpc]
-input_path = "/home/markm/.config/matugen/templates/rmpc.ron"
-output_path = "/home/markm/.config/rmpc/themes/matugen.ron"
+input_path = "~/.config/matugen/templates/rmpc.ron"
+output_path = "~/.config/rmpc/themes/matugen.ron"
 
 [templates.tmux]
-input_path = "/home/markm/.config/matugen/templates/tmux-colors.conf"
-output_path = "/home/markm/.tmux.conf"
+input_path = "~/.config/matugen/templates/tmux-colors.conf"
+output_path = "~/.tmux.conf"
 
 [templates.Matugen]
-input_path = "/home/markm/.config/matugen/templates/Matugen.colors"
-output_path = "/home/markm/.config/matugen/templates/example/Matugen.colors"
+input_path = "~/.config/matugen/templates/Matugen.colors"
+output_path = "~/.config/matugen/templates/example/Matugen.colors"
 
 #[templates.kvantum_kvconfig]
 #input_path = './templates/kvantum-colors.kvconfig'
@@ -35,8 +35,8 @@ output_path = "/home/markm/.config/matugen/templates/example/Matugen.colors"
 #output_path = '~/.config/Kvantum/matugen/matugen.svg'
 
 #[templates.kitty]
-#input_path = "/home/markm/.config/matugen/templates/base-theme.conf"
-#output_path = "/home/markm/.config/kitty/base-theme.conf"
+#input_path = "~/.config/matugen/templates/base-theme.conf"
+#output_path = "~/.config/kitty/base-theme.conf"
 
 # neovim and kitty are handled by DMS system templates with dank16 injection;
 # do not duplicate them here or plain `matugen` runs will fail on {{dank16.*}} vars.

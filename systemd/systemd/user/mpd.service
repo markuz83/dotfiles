@@ -5,7 +5,7 @@ After=network.target sound.target
 
 [Service]
 Type=notify
-ExecStart=/usr/bin/mpd --systemd --no-daemon /home/markm/.config/mpd/mpd.conf
+ExecStart=/usr/bin/mpd --systemd --no-daemon %h/.config/mpd/mpd.conf
 Restart=on-failure
 
 # Enable this setting to ask systemd to watch over MPD, see
