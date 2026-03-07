@@ -1,0 +1,8 @@
+theme = "matugen"
+
+[editor]
+true-color = true
+
+[keys.normal]
+"#" = "toggle_comments"
+q = { q = "wclose" }

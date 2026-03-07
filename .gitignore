@@ -1,0 +1,8 @@
+*secret*
+*secrets*
+*.env
+*credentials*
+*token*
+*.bak
+*.backup*
+*.log

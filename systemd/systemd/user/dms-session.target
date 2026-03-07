@@ -1,0 +1,4 @@
+[Unit]
+Description=DMS (Dank Material Shell) Session Target
+PartOf=graphical-session.target
+After=graphical-session.target

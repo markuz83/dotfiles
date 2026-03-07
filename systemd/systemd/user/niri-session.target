@@ -1,0 +1,6 @@
+[Unit]
+Description=Niri Session Target
+BindsTo=niri.service
+Requires=graphical-session.target
+After=graphical-session.target
+After=niri.service
