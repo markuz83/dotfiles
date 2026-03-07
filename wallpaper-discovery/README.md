@@ -15,4 +15,5 @@ The default `.stowrc` target (`~/.config`) does not apply here.
 
 ## Contents
 
-- `cachyos_comet_trails-v3.png` — original artwork
+- `cachyos_comet_trails.svg` — original Inkscape source (3840×2160, CachyOS cyan/teal palette, comet trail design)
+- `cachyos_comet_trails-v3.png` — exported PNG render
