@@ -10,7 +10,7 @@ Restart=always
 RestartSec=1
 StartLimitInterval=5
 StartLimitBurst=5
-ExecStart=%h/homebrew/plugins/decky-virtual-surround-sound/service.sh run
+ExecStart=/home/markm/homebrew/plugins/decky-virtual-surround-sound/service.sh run
 
 [Install]
 WantedBy=default.target

@@ -1,0 +1,225 @@
+# dank16-theme.toml
+# DankMaterialShell Dank16 palette for Helix
+# Place in ~/.config/helix/themes/dank16-theme.toml
+# Set theme = "dank16-theme" in ~/.config/helix/config.toml
+
+inherits = "default"
+
+# ── UI Chrome ────────────────────────────────────────────────────────────────
+
+"ui.background" = { bg = "bg" }
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "fg", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "fg_muted" }
+
+# Cursor
+"ui.cursor" = { fg = "bg", bg = "fg" }
+"ui.cursor.primary" = { fg = "bg", bg = "fg" }
+"ui.cursor.secondary" = { fg = "bg", bg = "fg_muted" }
+"ui.cursor.insert" = { fg = "bg", bg = "dank4" }
+"ui.cursor.select" = { fg = "bg", bg = "selection" }
+"ui.cursor.match" = { fg = "bg", bg = "dank3" }
+
+# Selection
+"ui.selection" = { bg = "bg_subtle" }
+"ui.selection.primary" = { bg = "bg_subtle" }
+
+# Status line
+"ui.statusline" = { fg = "fg_dim", bg = "bg_subtle" }
+"ui.statusline.active" = { fg = "fg", bg = "bg_subtle", modifiers = ["bold"] }
+"ui.statusline.inactive" = { fg = "fg_muted", bg = "bg" }
+"ui.statusline.normal" = { fg = "bg", bg = "dank4" }
+"ui.statusline.insert" = { fg = "bg", bg = "dank2" }
+"ui.statusline.select" = { fg = "bg", bg = "dank3" }
+"ui.statusline.separator" = { fg = "fg_muted" }
+
+# Line numbers
+"ui.linenr" = { fg = "fg_muted" }
+"ui.linenr.selected" = { fg = "fg_dim", modifiers = ["bold"] }
+
+# Gutter
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg_subtle" }
+
+# Popup / menu
+"ui.popup" = { fg = "fg", bg = "bg_subtle" }
+"ui.popup.info" = { fg = "dank4", bg = "bg_subtle" }
+"ui.window" = { fg = "fg_muted" }
+"ui.help" = { fg = "fg", bg = "bg_subtle" }
+
+# Completion menu
+"ui.menu" = { fg = "fg", bg = "bg_subtle" }
+"ui.menu.selected" = { fg = "bg", bg = "dank4" }
+"ui.menu.scroll" = { fg = "fg_muted", bg = "bg" }
+
+# Picker / prompt
+"ui.picker.header" = { fg = "dank4", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "dank6" }
+"ui.picker.header.column.active" = { fg = "fg", modifiers = ["bold"] }
+
+# Virtual / decorations
+"ui.virtual.ruler" = { bg = "bg_subtle" }
+"ui.virtual.whitespace" = { fg = "fg_muted" }
+"ui.virtual.indent-guide" = { fg = "fg_muted" }
+"ui.virtual.inlay-hint" = { fg = "fg_muted", modifiers = ["italic"] }
+"ui.virtual.jump-label" = { fg = "dank3", modifiers = ["bold"] }
+
+# Prompt
+"ui.prompt" = { fg = "fg", bg = "bg_subtle" }
+
+# Bufferline
+"ui.bufferline" = { fg = "fg_muted", bg = "bg" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg_subtle", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg" }
+
+# ── Diagnostics ──────────────────────────────────────────────────────────────
+
+"diagnostic.error" = { underline = { color = "dank1", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "dank3", style = "curl" } }
+"diagnostic.info" = { underline = { color = "dank4", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "dank6", style = "dotted" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+# ── Diff gutter ──────────────────────────────────────────────────────────────
+
+"diff.plus" = { fg = "dank2" }
+"diff.minus" = { fg = "dank1" }
+"diff.delta" = { fg = "dank3" }
+"diff.plus.gutter" = { fg = "dank2" }
+"diff.minus.gutter" = { fg = "dank1" }
+"diff.delta.gutter" = { fg = "dank3" }
+
+# ── Syntax ───────────────────────────────────────────────────────────────────
+
+# Keywords & control flow
+"keyword" = { fg = "dank5" }
+"keyword.control" = { fg = "dank5", modifiers = ["bold"] }
+"keyword.control.return" = { fg = "dank1" }
+"keyword.control.exception" = { fg = "dank1" }
+"keyword.operator" = { fg = "dank5" }
+"keyword.directive" = { fg = "dank5", modifiers = ["italic"] }
+"keyword.function" = { fg = "dank5", modifiers = ["bold"] }
+
+# Types
+"type" = { fg = "dank4" }
+"type.builtin" = { fg = "dank4", modifiers = ["italic"] }
+"type.parameter" = { fg = "dank12" }
+"type.enum.variant" = { fg = "dank9" }
+
+# Functions & methods
+"function" = { fg = "dank2" }
+"function.builtin" = { fg = "dank10" }
+"function.method" = { fg = "dank2" }
+"function.macro" = { fg = "dank6" }
+"function.special" = { fg = "dank6", modifiers = ["italic"] }
+
+# Variables
+"variable" = { fg = "fg" }
+"variable.builtin" = { fg = "dank9", modifiers = ["italic"] }
+"variable.parameter" = { fg = "fg_dim", modifiers = ["italic"] }
+"variable.other.member" = { fg = "dank12" }
+
+# Constants
+"constant" = { fg = "dank9" }
+"constant.builtin" = { fg = "dank9", modifiers = ["bold"] }
+"constant.builtin.boolean" = { fg = "dank5", modifiers = ["bold"] }
+"constant.numeric" = { fg = "dank9" }
+"constant.numeric.integer" = { fg = "dank9" }
+"constant.numeric.float" = { fg = "dank9" }
+"constant.character" = { fg = "dank9" }
+"constant.character.escape" = { fg = "dank6" }
+
+# Strings
+"string" = { fg = "dank3" }
+"string.regexp" = { fg = "dank6" }
+"string.special" = { fg = "dank6" }
+"string.special.url" = { fg = "accent", modifiers = ["underlined"] }
+"string.special.symbol" = { fg = "dank3" }
+
+# Operators & punctuation
+"operator" = { fg = "dank6" }
+"punctuation" = { fg = "fg_muted" }
+"punctuation.bracket" = { fg = "fg_dim" }
+"punctuation.delimiter" = { fg = "fg_muted" }
+"punctuation.special" = { fg = "dank6" }
+
+# Attributes / decorators
+"attribute" = { fg = "dank3", modifiers = ["italic"] }
+"attribute.builtin" = { fg = "dank3" }
+
+# Namespaces & modules
+"namespace" = { fg = "dank4", modifiers = ["italic"] }
+"module" = { fg = "dank4" }
+
+# Labels
+"label" = { fg = "dank5" }
+
+# Comments
+"comment" = { fg = "fg_muted", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "fg_muted", modifiers = ["italic"] }
+
+# Tags (HTML/XML/JSX)
+"tag" = { fg = "dank4" }
+"tag.builtin" = { fg = "dank4", modifiers = ["bold"] }
+"tag.attribute" = { fg = "dank2" }
+"tag.delimiter" = { fg = "fg_muted" }
+
+# Special tokens
+"special" = { fg = "dank6" }
+
+# ── Markup (Markdown / AsciiDoc etc.) ────────────────────────────────────────
+
+"markup.heading" = { fg = "dank4", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "dank4", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "dank2", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "dank3", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "dank6", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "dank5", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "fg_dim", modifiers = ["bold"] }
+"markup.list" = { fg = "dank4" }
+"markup.list.unnumbered" = { fg = "dank4" }
+"markup.list.numbered" = { fg = "dank9" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "accent", modifiers = ["underlined"] }
+"markup.link.text" = { fg = "dank6" }
+"markup.link.label" = { fg = "dank2" }
+"markup.quote" = { fg = "fg_muted", modifiers = ["italic"] }
+"markup.raw" = { fg = "dank3" }
+"markup.raw.inline" = { fg = "dank3" }
+"markup.raw.block" = { fg = "dank3" }
+
+# ── Palette ──────────────────────────────────────────────────────────────────
+# Must be last — TOML section headers apply to all keys below them
+
+[palette]
+
+# Dank16 base 8
+dank0 = "#0e1514" # Background
+dank1 = "#f49d6e" # Red
+dank2 = "#6ad572" # Green
+dank3 = "#fff472" # Yellow
+dank4 = "#6acac2" # Blue
+dank5 = "#1b625c" # Magenta (dark teal)
+dank6 = "#81d5ce" # Cyan
+dank7 = "#d2dfde" # Foreground (color7)
+
+# Dank16 bright 8
+dank8 = "#808a89"  # Bright Black / dark gray
+dank9 = "#ffc09f"  # Bright Red
+dank10 = "#a5ffac" # Bright Green
+dank11 = "#fff8a5" # Bright Yellow
+dank12 = "#9beae3" # Bright Blue
+dank13 = "#b8fff9" # Bright Magenta
+dank14 = "#d1fffb" # Bright Cyan
+dank15 = "#f8fffe" # Bright White
+
+# Semantic aliases
+bg = "#0e1514"        # color0 / terminal background
+bg_subtle = "#1c3533" # selection background
+fg = "#dde4e2"        # cursor foreground / true foreground
+fg_dim = "#d2dfde"    # color7
+fg_muted = "#808a89"  # color8
+selection = "#b0ccc9" # selection foreground used as highlight bg
+accent = "#81d5ce"    # cyan / url color
