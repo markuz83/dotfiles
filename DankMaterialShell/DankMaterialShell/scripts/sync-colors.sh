@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Runs on DankHooks onMatugenCompleted.
 # Matugen has already regenerated all color files at this point — this script
-# applies the downstream changes: GTK fix, wava restart, Papirus folder color.
+# applies the downstream changes: GTK fix, xava restart, Papirus folder color.
 
 set -euo pipefail
 
@@ -57,13 +57,13 @@ print('#' + rgb_to_hex(r2, g2, b2))
 PYEOF
 )
 
-echo "Wava color (darkened): $DARK_FOREGROUND"
+echo "Xava color (darkened): $DARK_FOREGROUND"
 sed -i "s/^foreground = '.*'/foreground = '$DARK_FOREGROUND'/" "$XAVA_CONFIG"
 
-# Relaunch wava in the background (picks up the darkened foreground)
-nohup /usr/bin/wava &>/dev/null &
+# Relaunch xava in the background (picks up the darkened foreground)
+nohup /usr/bin/xava &>/dev/null &
 disown
-echo "Relaunched wava."
+echo "Relaunched xava."
 
 # --- Papirus-Dark folder color ---
 BEST_COLOR=$(
