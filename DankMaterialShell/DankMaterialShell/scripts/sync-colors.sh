@@ -5,10 +5,10 @@
 
 set -euo pipefail
 
-WAVA_CONFIG="$HOME/.config/wava/config"
+XAVA_CONFIG="$HOME/.config/xava/config"
 
 # Kill any running wava instance
-pkill wava || true
+pkill xava || true
 
 # Re-append GTK fix: matugen overwrites dank-colors.css from the system template,
 # which lacks the backdrop selected text contrast fix for Thunar icon labels.
@@ -28,10 +28,10 @@ EOF
 done
 
 # Read the foreground color matugen wrote into the wava config for Papirus matching
-foreground=$(grep '^foreground = ' "$WAVA_CONFIG" | sed "s/foreground = '\\(.*\\)'/\\1/")
+foreground=$(grep '^foreground = ' "$XAVA_CONFIG" | sed "s/foreground = '\\(.*\\)'/\\1/")
 
 if [[ -z "$foreground" ]]; then
-  echo "Error: Could not extract foreground from $WAVA_CONFIG" >&2
+  echo "Error: Could not extract foreground from $XAVA_CONFIG" >&2
   exit 1
 fi
 
@@ -58,7 +58,7 @@ PYEOF
 )
 
 echo "Wava color (darkened): $DARK_FOREGROUND"
-sed -i "s/^foreground = '.*'/foreground = '$DARK_FOREGROUND'/" "$WAVA_CONFIG"
+sed -i "s/^foreground = '.*'/foreground = '$DARK_FOREGROUND'/" "$XAVA_CONFIG"
 
 # Relaunch wava in the background (picks up the darkened foreground)
 nohup /usr/bin/wava &>/dev/null &
