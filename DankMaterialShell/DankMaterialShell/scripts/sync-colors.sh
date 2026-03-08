@@ -5,7 +5,7 @@
 
 set -euo pipefail
 
-XAVA_CONFIG="$HOME/.config/xava/config"
+XAVA_CONFIG="$HOME/dotfiles/xava/xava/config"
 
 # Kill any running wava instance
 pkill xava || true
