@@ -275,7 +275,7 @@ source = default
 #  Xrdb
 #  - Under Windows 'default' uses your system accent color
 #  - And on any other 'default' is just black and cyan (the default colorscheme)
-foreground = '#0c2624'
+foreground = '#81d5ce'
 
 # This adjusts the opacity of the bars (must have transparency for it to work)
  foreground_opacity = 0.6
