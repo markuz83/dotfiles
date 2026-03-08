@@ -4,19 +4,19 @@ template_dir = "~/.config/matugen/templates"
 
 [templates.helix]
 input_path = "~/.config/matugen/templates/helix.toml"
-output_path = "~/.config/helix/themes/matugen.toml"
+output_path = "~/dotfiles/helix/helix/themes/matugen.toml"
 
 [templates.yazi]
 input_path = "/usr/share/quickshell/dms/matugen/templates/yazi-theme.toml"
-output_path = "~/.config/yazi/flavors/matugen.yazi/flavor.toml"
+output_path = "~/dotfiles/yazi/yazi/flavors/matugen.yazi/flavor.toml"
 
 [templates.wava]
 input_path = "~/.config/matugen/templates/wava.ini"
-output_path = "~/.config/wava/config"
+output_path = "~/dotfiles/wava/wava/config"
 
 [templates.rmpc]
 input_path = "~/.config/matugen/templates/rmpc.ron"
-output_path = "~/.config/rmpc/themes/matugen.ron"
+output_path = "~/dotfiles/rmpc/rmpc/themes/matugen.ron"
 
 [templates.tmux]
 input_path = "~/.config/matugen/templates/tmux-colors.conf"
