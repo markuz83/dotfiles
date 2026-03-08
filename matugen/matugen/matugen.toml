@@ -10,6 +10,10 @@ output_path = "~/dotfiles/helix/helix/themes/matugen.toml"
 input_path = "/usr/share/quickshell/dms/matugen/templates/yazi-theme.toml"
 output_path = "~/dotfiles/yazi/yazi/flavors/matugen.yazi/flavor.toml"
 
+[templates.xava]
+input_path = "~/.config/matugen/templates/xava.ini"
+output_path = "~/dotfiles/xava/xava/config"
+
 [templates.wava]
 input_path = "~/.config/matugen/templates/wava.ini"
 output_path = "~/dotfiles/wava/wava/config"
