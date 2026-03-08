@@ -1,3 +1,4 @@
+# ─── Font ─────────────────────────────────────────────────────
 font-family = JetBrainsMono Nerd Font
 font-family-bold = JetBrainsMono Nerd Font
 font-family-italic = JetBrainsMono Nerd Font
@@ -7,38 +8,40 @@ font-style-bold = default
 font-style-italic = default
 font-style-bold-italic = default
 font-synthetic-style = bold,italic,bold-italic
-font-feature = 
+font-feature =
 font-size = 16
-font-variation = 
-font-variation-bold = 
-font-variation-italic = 
-font-variation-bold-italic = 
-font-codepoint-map = 
+font-variation =
+font-variation-bold =
+font-variation-italic =
+font-variation-bold-italic =
+font-codepoint-map =
 font-thicken = false
 font-thicken-strength = 255
 font-shaping-break = cursor
 alpha-blending = linear-corrected
-adjust-cell-width = 
-adjust-cell-height = 
-adjust-font-baseline = 
-adjust-underline-position = 
-adjust-underline-thickness = 
-adjust-strikethrough-position = 
-adjust-strikethrough-thickness = 
-adjust-overline-position = 
-adjust-overline-thickness = 
-adjust-cursor-thickness = 
-adjust-cursor-height = 
-adjust-box-thickness = 
-adjust-icon-height = 
+adjust-cell-width =
+adjust-cell-height =
+adjust-font-baseline =
+adjust-underline-position =
+adjust-underline-thickness =
+adjust-strikethrough-position =
+adjust-strikethrough-thickness =
+adjust-overline-position =
+adjust-overline-thickness =
+adjust-cursor-thickness =
+adjust-cursor-height =
+adjust-box-thickness =
+adjust-icon-height =
 grapheme-width-method = unicode
 freetype-load-flags = hinting,no-force-autohint,no-monochrome,autohint
-theme = dankcolors 
-cursor-color = 
+
+# ─── Appearance ───────────────────────────────────────────────
+theme = dankcolors
+cursor-color =
 cursor-opacity = 1
 cursor-style = block
-cursor-style-blink = 
-cursor-text = 
+cursor-style-blink =
+cursor-text =
 cursor-click-to-move = true
 mouse-hide-while-typing = false
 scroll-to-bottom = keystroke,no-output
@@ -48,23 +51,29 @@ background-opacity = 0.2
 background-opacity-cells = false
 background-blur = true
 unfocused-split-opacity = 0.7
-unfocused-split-fill = 
-split-divider-color = 
-command = 
-initial-command = 
-env = 
-input = 
+unfocused-split-fill =
+split-divider-color =
+
+# ─── Shell ────────────────────────────────────────────────────
+command =
+initial-command =
+env =
+input =
 wait-after-command = false
 abnormal-command-exit-runtime = 250
 scrollback-limit = 10000000
 link-url = true
 link-previews = true
+
+# ─── Window ───────────────────────────────────────────────────
 maximize = false
 fullscreen = false
-title = 
-class = 
-x11-instance-name = 
-working-directory = 
+title =
+class =
+x11-instance-name =
+working-directory =
+
+# ─── Keybindings ──────────────────────────────────────────────
 keybind = ctrl+shift+arrow_left=previous_tab
 keybind = ctrl+equal=increase_font_size:1
 keybind = ctrl+shift+o=new_split:right
@@ -135,6 +144,8 @@ keybind = super+ctrl+shift+arrow_right=resize_split:right,10
 keybind = ctrl+shift+enter=toggle_split_zoom
 keybind = alt+4=goto_tab:4
 keybind = alt+8=goto_tab:8
+
+# ─── Window Settings ──────────────────────────────────────────
 window-padding-x = 2
 window-padding-y = 2
 window-padding-balance = false
@@ -143,41 +154,47 @@ window-vsync = true
 window-inherit-working-directory = true
 window-inherit-font-size = true
 window-decoration = auto
-window-title-font-family = 
+window-title-font-family =
 window-subtitle = false
 window-theme = auto
 window-colorspace = srgb
 window-height = 0
 window-width = 0
-window-position-x = 
-window-position-y = 
+window-position-x =
+window-position-y =
 window-save-state = default
 window-step-resize = false
 window-new-tab-position = current
 window-show-tab-bar = auto
-window-titlebar-background = 
-window-titlebar-foreground = 
+window-titlebar-background =
+window-titlebar-foreground =
 resize-overlay = after-first
 resize-overlay-position = center
 resize-overlay-duration = 750ms
 focus-follows-mouse = false
+
+# ─── Clipboard ────────────────────────────────────────────────
 clipboard-read = ask
 clipboard-write = allow
 clipboard-trim-trailing-spaces = true
 clipboard-paste-protection = true
 clipboard-paste-bracketed-safe = true
+
+# ─── Behavior ─────────────────────────────────────────────────
 title-report = false
 image-storage-limit = 320000000
 copy-on-select = true
 right-click-action = context-menu
 click-repeat-interval = 0
-config-file = 
+config-file =
 config-default-files = true
 confirm-close-surface = true
 quit-after-last-window-closed = true
-quit-after-last-window-closed-delay = 
+quit-after-last-window-closed-delay =
 initial-window = true
 undo-timeout = 5s
+
+# ─── Quick Terminal ───────────────────────────────────────────
 quick-terminal-position = top
 gtk-quick-terminal-layer = top
 gtk-quick-terminal-namespace = ghostty-quick-terminal
@@ -186,8 +203,12 @@ quick-terminal-animation-duration = 0.2
 quick-terminal-autohide = false
 quick-terminal-space-behavior = move
 quick-terminal-keyboard-interactivity = on-demand
+
+# ─── Shell Integration ────────────────────────────────────────
 shell-integration = detect
 shell-integration-features = cursor,no-sudo,title,no-ssh-env,no-ssh-terminfo,path
+
+# ─── Command Palette ──────────────────────────────────────────
 command-palette-entry = title:"Change Title...",description:"Prompt for a new title for the current terminal.",action:"prompt_surface_title"
 command-palette-entry = title:"Check for Updates",description:"Check for updates to the application.",action:"check_for_updates"
 command-palette-entry = title:"Clear Screen",description:"Clear the screen and scrollback.",action:"clear_screen"
@@ -249,33 +270,41 @@ command-palette-entry = title:"Toggle Split Zoom",description:"Toggle the zoom s
 command-palette-entry = title:"Toggle Tab Overview",description:"Toggle the tab overview.",action:"toggle_tab_overview"
 command-palette-entry = title:"Toggle Window Decorations",description:"Toggle the window decorations.",action:"toggle_window_decorations"
 command-palette-entry = title:"Undo",description:"Undo the last action.",action:"undo"
+
+# ─── Terminal ─────────────────────────────────────────────────
 osc-color-report-format = 16-bit
 vt-kam-allowed = false
 custom-shader = ./shaders/cursor_blaze.glsl
 custom-shader-animation = true
+
+# ─── Bell & Notifications ─────────────────────────────────────
 bell-features = no-system,no-audio,attention,title,no-border
-bell-audio-path = 
+bell-audio-path =
 bell-audio-volume = 0.5
 app-notifications = clipboard-copy,config-reload
+
+# ─── Platform: macOS ──────────────────────────────────────────
 macos-non-native-fullscreen = false
 macos-window-buttons = visible
 macos-titlebar-style = transparent
 macos-titlebar-proxy-icon = visible
 macos-dock-drop-behavior = new-tab
-macos-option-as-alt = 
+macos-option-as-alt =
 macos-window-shadow = true
 macos-hidden = never
 macos-auto-secure-input = true
 macos-secure-input-indication = true
 macos-icon = official
-macos-custom-icon = 
+macos-custom-icon =
 macos-icon-frame = aluminum
-macos-icon-ghost-color = 
-macos-icon-screen-color = 
+macos-icon-ghost-color =
+macos-icon-screen-color =
 macos-shortcuts = ask
+
+# ─── Platform: Linux / GTK ────────────────────────────────────
 linux-cgroup = single-instance
-linux-cgroup-memory-limit = 
-linux-cgroup-processes-limit = 
+linux-cgroup-memory-limit =
+linux-cgroup-processes-limit =
 linux-cgroup-hard-fail = false
 gtk-opengl-debug = false
 gtk-single-instance = detect
@@ -285,12 +314,12 @@ gtk-titlebar-hide-when-maximized = false
 gtk-toolbar-style = raised
 gtk-titlebar-style = native
 gtk-wide-tabs = true
-gtk-custom-css = 
+gtk-custom-css =
 desktop-notifications = true
-bold-color = 
+bold-color =
 faint-opacity = 0.5
 term = xterm-ghostty
-enquiry-response = 
+enquiry-response =
 async-backend = auto
-auto-update = 
-auto-update-channel = 
+auto-update =
+auto-update-channel =
