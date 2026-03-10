@@ -275,7 +275,7 @@ source = default
 #  Xrdb
 #  - Under Windows 'default' uses your system accent color
 #  - And on any other 'default' is just black and cyan (the default colorscheme)
-foreground = '#81d5ce'
+foreground = '#0d2621'
 
 # This adjusts the opacity of the bars (must have transparency for it to work)
  foreground_opacity = 0.6
@@ -288,9 +288,9 @@ background_opacity = 0.0
 # To enable gradients, just change gradient_count to the number of colors you
 # have specified (0 = disabled)
  gradient_count = 3
-gradient_color_1 = '#00504c'
-gradient_color_2 = '#324b49'
-gradient_color_3 = '#304962'
+gradient_color_1 = '#005047'
+gradient_color_2 = '#334b47'
+gradient_color_3 = '#2c4a60'
 
 
 [filter]

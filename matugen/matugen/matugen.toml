@@ -2,6 +2,10 @@
 # where matugen should output files
 template_dir = "~/.config/matugen/templates"
 
+[templates.foot]
+input_path = "~/.config/matugen/templates/foot.ini"
+output_path = "~/dotfiles/foot/foot/foot.ini"
+
 [templates.helix]
 input_path = "~/.config/matugen/templates/helix.toml"
 output_path = "~/dotfiles/helix/helix/themes/matugen.toml"

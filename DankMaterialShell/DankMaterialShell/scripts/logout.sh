@@ -32,8 +32,8 @@ elif [ -n "$HYPRLAND_INSTANCE_SIGNATURE" ]; then
     fi
   fi
   hyprshutdown
-  sleep 2
-  #hyprctl dispatch exit
+  sleep 5
+  hyprctl dispatch exit
 elif command -v mangowc &>/dev/null; then
   # MangoWC window manager detected
 
